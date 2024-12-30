@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">侯裕洋的博客</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#articles">文章</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>欢迎来到我的博客</h1>
+            <p>分享我的想法和经验</p>
+        </section>
+
+        <section id="articles" class="articles">
+            <div class="articles-header">
+                <h2>最新文章</h2>
+                <button id="newArticleBtn" class="new-article-btn">创建新文章</button>
+            </div>
+            
+            <!-- 添加创建文章的表单 -->
+            <div id="articleForm" class="article-form hidden">
+                <h3>创建新文章</h3>
+                <form id="createArticleForm">
+                    <div class="form-group">
+                        <label for="articleTitle">文章标题</label>
+                        <input type="text" id="articleTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="articleSummary">文章简介</label>
+                        <textarea id="articleSummary" rows="2" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="articleContent">文章内容</label>
+                        <textarea id="articleContent" rows="10" required></textarea>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit">发布文章</button>
+                        <button type="button" id="cancelArticle">取消</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="article-grid">
+                <article class="article-card">
+                    <h3>文章标题 1</h3>
+                    <p>文章简介...</p>
+                    <a href="#">阅读更多</a>
+                </article>
+                <article class="article-card">
+                    <h3>文章标题 2</h3>
+                    <p>文章简介...</p>
+                    <a href="#">阅读更多</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>关于我</h2>
+            <p>一个喜欢编程、热爱科技的学习者，致力于了解世界，探索未知。</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>联系方式</h2>
+            <p>邮箱: y2387968389@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 侯裕洋的博客. 保留所有权利.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章详情 - 我的博客</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">侯裕洋的博客</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">首页</a></li>
+                <li><a href="index.html#articles">文章</a></li>
+                <li><a href="index.html#about">关于我</a></li>
+                <li><a href="index.html#contact">联系方式</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="article-detail">
+            <div class="article-actions">
+                <button id="editArticle" class="edit-btn">编辑文章</button>
+                <button id="deleteArticle" class="delete-btn">删除文章</button>
+            </div>
+            <h1 id="articleTitle"></h1>
+            <div id="articleContent"></div>
+        </article>
+
+        <!-- 编辑文章表单 -->
+        <div id="editForm" class="article-form hidden">
+            <h3>编辑文章</h3>
+            <form id="editArticleForm">
+                <div class="form-group">
+                    <label for="editTitle">文章标题</label>
+                    <input type="text" id="editTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="editSummary">文章简介</label>
+                    <textarea id="editSummary" rows="2" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="editContent">文章内容</label>
+                    <textarea id="editContent" rows="10" required></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="submit">保存修改</button>
+                    <button type="button" id="cancelEdit">取消</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 我的博客. 保留所有权利.</p>
+    </footer>
+    <script src="article.js"></script>
+</body>
+</html> 
